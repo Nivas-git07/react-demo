@@ -1,6 +1,6 @@
 import "./color.css"
 import Input from "../../component/input"
-const Color = (handleChange) => {
+const Color = ({handleChange}) => {
     return (
         <div>
             <div>

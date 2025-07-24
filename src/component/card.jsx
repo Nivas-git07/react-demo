@@ -1,5 +1,5 @@
 import { BsFillBagFill } from "react-icons/bs";
-const Card = ({ img, title, star, reviews, Prevprice, newprice }) => {
+const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
     return (
         <section className="card">
             <img src={img} alt={title} className="card-img" />
@@ -11,7 +11,7 @@ const Card = ({ img, title, star, reviews, Prevprice, newprice }) => {
                 </section>
                 <section className="card-price">
                     <div className="price">
-                        <del>{Prevprice}</del> {newprice}
+                        <del>{prevPrice}</del> {newPrice}
                     </div>
                     <div className="bag">
                         <BsFillBagFill className="bag-icon" />
