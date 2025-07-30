@@ -18,14 +18,14 @@ const Category = ({handlechange}) => {
             />
             <Input
                 handleChange={handlechange}
-                value="Flats"
-                title="Flats"
+                value="flats"
+                title="flats"
                 name="test"
             />
             <Input
                 handleChange={handlechange}
-                value="Heels"
-                title="Heels"
+                value="heels"
+                title="heels"
                 name="test"
             />
             <Input
