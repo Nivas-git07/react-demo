@@ -1,39 +1,39 @@
 import "./color.css"
 import Input from "../../component/input"
-const Color = ({handleChange}) => {
+const Color = ({handlechange}) => {
     return (
         <div>
             <div>
                 <h2 className="sidebar-title color-title">Colors</h2>
                 <label className="sidebar-label-container">
-                    <input onChange={handleChange} type="radio" value="" name="test1" />
+                    <input onChange={handlechange} type="radio" value="" name="test1" />
                     <span className="checkmark all"></span>
                     All
                 </label>
             </div>
             <Input
-                handleChange={handleChange}
+                handleChange={handlechange}
                 value="black"
                 title="Black"
                 name="test1"
                 color="black"
             />
             <Input
-                handleChange={handleChange}
+                handleChange={handlechange}
                 value="blue"
                 title="Blue"
                 name="test1"
                 color="blue"
             />
             <Input
-                handleChange={handleChange}
+                handleChange={handlechange}
                 value="red"
                 title="Red"
                 name="test1"
                 color="red"
             />
             <Input
-                handleChange={handleChange}
+                handleChange={handlechange}
                 value="green"
                 title="Green"
                 name="test1"
@@ -41,7 +41,7 @@ const Color = ({handleChange}) => {
             />
             <label className="sidebar-label-container">
                 <input
-                    onChange={handleChange}
+                    onChange={handlechange}
                     type="radio"
                     value="white"
                     name="test1"

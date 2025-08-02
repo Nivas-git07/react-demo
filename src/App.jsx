@@ -18,8 +18,10 @@ function App() {
   }
   const handleChange = (event) => {
     setSelectCategory(event.target.value)
+    console.log("this button will work")
   }
   const handleClick = (event) => {
+    console.log("this button will work")
     setSelectCategory(event.target.value)
   }
   const filterItems = products.filter(
@@ -32,7 +34,7 @@ function App() {
       filterproducts = filterItems;
     }
     if (selected) {
-      
+
       filterproducts = filterproducts.filter(
         ({ category, color, company, newPrice, title }) =>
           category === selected ||
@@ -41,7 +43,7 @@ function App() {
           newPrice === selected ||
           title === selected
       )
-      
+
     }
     return filterproducts.map(({ img, title, star, reviews, prevPrice, newPrice }) => (
       <Card
